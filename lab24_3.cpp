@@ -2,7 +2,23 @@
 
 using namespace std;
 
-//Write function count() here.
+#include <iostream>
+#include <set> 
+
+using namespace std;
+
+
+int count(int arr[], int size) {
+    set<int> unique_numbers;
+    
+ 
+    for (int i = 0; i < size; i++) {
+        unique_numbers.insert(arr[i]);
+    }
+    
+ 
+    return unique_numbers.size();
+}
 
 int main(){	
 	int data[] = {1,2,4,5,4,8,2,1,2,4,6,1,4,4,4,2,1,0,12}; 
